@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:elevation="2dp"
-        android:text="Take photo"
+        android:text="@string/txt_bt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/guideline_top"
         app:layout_constraintStart_toStartOf="parent" />

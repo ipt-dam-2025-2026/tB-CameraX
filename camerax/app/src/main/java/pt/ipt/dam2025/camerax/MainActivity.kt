@@ -104,7 +104,7 @@ class MainActivity : AppCompatActivity() {
                 // inform user that it is not possible to use the camera
                 Toast.makeText(
                     baseContext,
-                    "Permission request denied",
+                    getString(R.string.permission_denied),
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
@@ -185,7 +185,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onImageSaved(output: ImageCapture.OutputFileResults) {
-                    val msg = "Photo capture succeeded: ${output.savedUri}"
+                    val msg = getString(R.string.after_take_photo, output.savedUri)
                     Toast.makeText(baseContext, msg, Toast.LENGTH_LONG).show()
                     Log.d(TAG, msg)
                 }
