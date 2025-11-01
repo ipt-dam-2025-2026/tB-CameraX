@@ -13,8 +13,9 @@
     %1d -> decimal
     %1f -> float
     %1i -> integer
-
-
+    %1$s -> primeiro argumento
+    %2$s -> segundo argumento
+    ...
 
     caracteres de 'escape'
     \n -> nova linha
